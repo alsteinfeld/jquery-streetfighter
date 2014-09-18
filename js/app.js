@@ -26,10 +26,10 @@ $(document).ready(function() {
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
 		// ryu goes back to his ready position
-	})
+	});
 	// having trouble getting the keydown and keyup funcitons to trigger
-	.keydown(function(event) {
-		if ( event.which == 88) {
+	$('body').keydown(function(event) {
+		if (event.which == 88) {
 			$('.ryu-still').hide();
 			$('.ryu-cool').show();
 		}
